@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './Modal.scss'
 
 class Modal extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             n: this.props.tableValues.n,
@@ -24,13 +24,14 @@ class Modal extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         let data = {
-            n: parseInt(this.state.n) ? parseInt(this.state.n) : this.props.tableValues.n,
+            //make sure new starting number is less than max
+            //also make sure that each value is an int, otherwise, return previous value
+            n: (parseInt(this.state.n) && parseInt(this.state.n) < parseInt(this.state.m)) ? parseInt(this.state.n) : this.props.tableValues.n,
             x: parseInt(this.state.x) ? parseInt(this.state.x) : this.props.tableValues.x,
             m: parseInt(this.state.m) ? parseInt(this.state.m) : this.props.tableValues.m,
             w: parseInt(this.state.w) ? parseInt(this.state.w) : this.props.tableValues.w,
             d: this.state.d,
         }
-        console.log(data);
         this.props.reaction(data);
     }
 
@@ -38,8 +39,8 @@ class Modal extends Component {
         e.preventDefault();
         this.props.reaction('cancel');
     }
-    
-    render(){
+
+    render() {
         return (
             <div className="modal">
                 <div className="container modal-container">

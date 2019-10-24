@@ -31,10 +31,11 @@ class App extends Component {
 
         return (
             <div>
+                <h1>Responsive Tables</h1>
                 <div className="container">
-                    <Table tableValues={tableRed}/>
-                    <Table tableValues={tableGreen}/>
-                    <Table tableValues={tableBlue}/>
+                    <Table tableValues={tableRed} />
+                    <Table tableValues={tableGreen} />
+                    <Table tableValues={tableBlue} />
                 </div>
             </div>
         )

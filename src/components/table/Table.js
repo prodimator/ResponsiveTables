@@ -4,7 +4,7 @@ import Modal from '../modal/Modal';
 import './Table.scss';
 
 class Table extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             n: this.props.tableValues.n,
@@ -26,17 +26,17 @@ class Table extends Component {
 
     createTable = () => {
         let numOfItems = (this.state.m - this.state.n) / this.state.x
-        let rows = Math.ceil(numOfItems/ 5);
+        let rows = Math.ceil(numOfItems / 5);
 
         let table = [];
         let val = this.state.n
-        for (let i = 0; i < rows; i++){
+        for (let i = 0; i < rows; i++) {
             let row = [];
-            for (let j = 0; j < 5; j++){
-                if (val <= this.state.m){
+            for (let j = 0; j < 5; j++) {
+                if (val <= this.state.m) {
                     row.push(val);
                 }
-                else{
+                else {
                     row.push("");
                 }
                 val += this.state.x;
@@ -44,7 +44,7 @@ class Table extends Component {
             table.push(row);
         }
 
-        if (this.state.d === 'ltr-up' || this.state.d === 'rtl-up'){
+        if (this.state.d === 'ltr-up' || this.state.d === 'rtl-up') {
             this.reverseTable(table);
         }
         return table
@@ -52,20 +52,20 @@ class Table extends Component {
 
     getDirection = (rowNum, numRows) => {
         //odd number of rows -- necessary since grid builds from the top down and I have to reverse the array
-        if (numRows % 2 === 1){
-            if (this.state.d === 'ltr-up' || this.state.d === 'rtl-dn'){
+        if (numRows % 2 === 1) {
+            if (this.state.d === 'ltr-up' || this.state.d === 'rtl-dn') {
                 return rowNum % 2 === 0 ? 'reverse' : ''
             }
-            else if (this.state.d === 'ltr-dn' || this.state.d === 'rtl-up'){
+            else if (this.state.d === 'ltr-dn' || this.state.d === 'rtl-up') {
                 return rowNum % 2 === 1 ? 'reverse' : ''
             }
         }
         //even number of rows
-        else{
-            if (this.state.d === 'ltr-up' || this.state.d === 'ltr-dn'){
+        else {
+            if (this.state.d === 'ltr-up' || this.state.d === 'ltr-dn') {
                 return rowNum % 2 === 1 ? 'reverse' : ''
             }
-            else if (this.state.d === 'rtl-dn' || this.state.d === 'rtl-up'){
+            else if (this.state.d === 'rtl-dn' || this.state.d === 'rtl-up') {
                 return rowNum % 2 === 0 ? 'reverse' : ''
             }
         }
@@ -73,10 +73,10 @@ class Table extends Component {
     }
 
     handleConfigureReaction = (result) => {
-        if (result === 'cancel'){
-            this.setState({ showModal: false});
+        if (result === 'cancel') {
+            this.setState({ showModal: false });
         }
-        else{
+        else {
             this.setState({
                 ...result,
                 showModal: false
@@ -87,7 +87,7 @@ class Table extends Component {
     render() {
         let table = this.createTable();
         return (
-            <div style={{width: `${this.state.w}%`, margin: '20px'}} id={this.state.color}>
+            <div style={{ width: `${this.state.w}%`, marginBottom: '20px' }} id={this.state.color}>
                 <div className={`table ${this.state.color}`} >
                     {table.map((row, index) => (
                         <div key={index} className={`row ${this.getDirection(index, table.length)}`}>
@@ -97,7 +97,7 @@ class Table extends Component {
                         </div>
                     ))}
                 </div>
-                <button onClick={() => this.setState({showModal: true})}>Configure</button>
+                <button onClick={() => this.setState({ showModal: true })}>Configure</button>
                 {this.state.showModal &&
                     <Modal reaction={this.handleConfigureReaction} tableValues={this.state} />
                 }

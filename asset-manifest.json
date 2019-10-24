@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/responsive-tables/static/css/main.e361f24b.chunk.css",
+    "main.js": "/responsive-tables/static/js/main.d06bcb79.chunk.js",
+    "main.js.map": "/responsive-tables/static/js/main.d06bcb79.chunk.js.map",
+    "runtime-main.js": "/responsive-tables/static/js/runtime-main.65d35c17.js",
+    "runtime-main.js.map": "/responsive-tables/static/js/runtime-main.65d35c17.js.map",
+    "static/js/2.ca984729.chunk.js": "/responsive-tables/static/js/2.ca984729.chunk.js",
+    "static/js/2.ca984729.chunk.js.map": "/responsive-tables/static/js/2.ca984729.chunk.js.map",
+    "index.html": "/responsive-tables/index.html",
+    "precache-manifest.e8edb3077e6db6d16c968d22a405d255.js": "/responsive-tables/precache-manifest.e8edb3077e6db6d16c968d22a405d255.js",
+    "service-worker.js": "/responsive-tables/service-worker.js",
+    "static/css/main.e361f24b.chunk.css.map": "/responsive-tables/static/css/main.e361f24b.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.65d35c17.js",
+    "static/js/2.ca984729.chunk.js",
+    "static/css/main.e361f24b.chunk.css",
+    "static/js/main.d06bcb79.chunk.js"
+  ]
+}

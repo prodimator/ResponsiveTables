@@ -2,7 +2,7 @@
   "name": "tables",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://prodimator.github.io/responsive-tables",
+  "homepage": "https://prodimator.github.io/ResponsiveTables",
   "dependencies": {
     "node-sass": "^4.12.0",
     "react": "^16.10.2",

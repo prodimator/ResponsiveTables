@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ResponsiveTables/static/css/main.5bd058b8.chunk.css",
+    "main.css": "/ResponsiveTables/static/css/main.6376ac93.chunk.css",
     "main.js": "/ResponsiveTables/static/js/main.536ea1e8.chunk.js",
     "main.js.map": "/ResponsiveTables/static/js/main.536ea1e8.chunk.js.map",
     "runtime-main.js": "/ResponsiveTables/static/js/runtime-main.2d4af943.js",
@@ -8,14 +8,14 @@
     "static/js/2.ca984729.chunk.js": "/ResponsiveTables/static/js/2.ca984729.chunk.js",
     "static/js/2.ca984729.chunk.js.map": "/ResponsiveTables/static/js/2.ca984729.chunk.js.map",
     "index.html": "/ResponsiveTables/index.html",
-    "precache-manifest.72316cc3b3ac701861b23b4f13174261.js": "/ResponsiveTables/precache-manifest.72316cc3b3ac701861b23b4f13174261.js",
+    "precache-manifest.a18617e002f4a86fea163edf11038914.js": "/ResponsiveTables/precache-manifest.a18617e002f4a86fea163edf11038914.js",
     "service-worker.js": "/ResponsiveTables/service-worker.js",
-    "static/css/main.5bd058b8.chunk.css.map": "/ResponsiveTables/static/css/main.5bd058b8.chunk.css.map"
+    "static/css/main.6376ac93.chunk.css.map": "/ResponsiveTables/static/css/main.6376ac93.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.2d4af943.js",
     "static/js/2.ca984729.chunk.js",
-    "static/css/main.5bd058b8.chunk.css",
+    "static/css/main.6376ac93.chunk.css",
     "static/js/main.536ea1e8.chunk.js"
   ]
 }
